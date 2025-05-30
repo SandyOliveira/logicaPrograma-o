@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Linha do Tempo - Curso de Lógica de Programação com JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 50px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: #3b82f6;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 20px 30px;
+            position: relative;
+            width: 50%;
+        }
+
+        .container.left {
+            left: 0;
+        }
+
+        .container.right {
+            left: 50%;
+        }
+
+        .content {
+            padding: 20px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: white;
+            border: 4px solid #3b82f6;
+            border-radius: 50%;
+            top: 20px;
+            z-index: 1;
+        }
+
+        .container.left::after {
+            right: -10px;
+        }
+
+        .container.right::after {
+            left: -10px;
+        }
+
+        .container.left .content {
+            margin-right: auto;
+        }
+
+        .container.right .content {
+            margin-left: auto;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Linha do Tempo: Curso de Lógica de Programação com JavaScript</h2>
+
+<div class="timeline">
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 1</h3>
+            <p>Introdução à Programação e ao JavaScript</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 2</h3>
+            <p>Configuração do ambiente e console.log</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 3</h3>
+            <p>Variáveis: let, const e var</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 4</h3>
+            <p>Tipos de Dados: String, Number, Boolean</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 5</h3>
+            <p>Operadores Aritméticos</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 6</h3>
+            <p>Operadores de Comparação e Lógicos</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 7</h3>
+            <p>Estruturas Condicionais: if, else, else if</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 8</h3>
+            <p>Estrutura Condicional: switch</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 9</h3>
+            <p>Funções: Declaração e Chamada</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 10</h3>
+            <p>Parâmetros e Retorno de Funções</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 11</h3>
+            <p>Funções Anônimas e Arrow Functions</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 12</h3>
+            <p>Arrays: Criando e Manipulando</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 13</h3>
+            <p>Laço de Repetição: for</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 14</h3>
+            <p>Laço while e do...while</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 15</h3>
+            <p>forEach e map</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 16</h3>
+            <p>Objetos: Estrutura e Manipulação</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 17</h3>
+            <p>Introdução ao Debugging: console, breakpoints</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 18</h3>
+            <p>Escopo de Variáveis e Hoisting</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 19</h3>
+            <p>Tratamento de Erros: try...catch</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 20</h3>
+            <p>Introdução ao DOM: conceitos básicos</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 21</h3>
+            <p>Eventos: onclick, onsubmit</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 22</h3>
+            <p>Manipulando Elementos com JavaScript</p>
+        </div>
+    </div>
+
+    <div class="container left">
+        <div class="content">
+            <h3>Aula 23</h3>
+            <p>Mini-Projeto: Calculadora ou Jogo Simples</p>
+        </div>
+    </div>
+
+    <div class="container right">
+        <div class="content">
+            <h3>Aula 24</h3>
+            <p>Revisão Geral e Apresentação do Projeto Final</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Prof. Sandy Oliveira
+</footer>
+
+</body>
+</html>
